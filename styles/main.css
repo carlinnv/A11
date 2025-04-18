@@ -45,6 +45,20 @@ header img {
 }
 
 @media only screen and (max-width:530px) {
+	.js #nav_menu {
+		display: none; /* hide standard nav menu */
+	}
+	/* #mobile_menu {
+		display: block; 
+	} */
+
+	.js .slicknav_menu {
+		display: block; 
+		/* background-color: #800000 !important; */
+	}
+}
+
+@media only screen and (max-width:530px) {
 	header img {
 		float: none; 
 	}
@@ -102,24 +116,9 @@ header img {
     display: block;
 }
 
-#mobile_menu {
+
+.slicknav_menu {
 	display: none; 
-}
-
-#mobile_menu {
-	display: block; 
-}
-
-@media only screen and (max-width:530px) {
-	#nav_menu {
-		display: none; /* hide standard nav menu */
-	}
-	#mobile_menu {
-		display: block; 
-	}
-	.slicknav_menu {
-		background-color: #800000 !important;
-	}
 }
 
 /* the styles for the section */
@@ -170,7 +169,6 @@ section li {
 	section {
 		float: none; 
 		width: calc(100% - calc(100% * 0.025) - calc(100% * 0.025)); 
-
 	}
 }
 
